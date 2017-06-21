@@ -1,4 +1,5 @@
 <html>
+    <p id="place"></p>
 <script>
 var d_json;  //data json
 var i=0;    // iteration
@@ -30,10 +31,10 @@ function load()
           });
 }
 load();
-    docuemnt.write("this are the main part of seosh <br>");
+   
 for(i=0;i<d_json.length;i++)
 {
-    document.write(d_json[i]+"<br>");
+    document.getElementById("places").innerHTML = d_json[i]+"<br>");
 }
 </script>
 </html>
